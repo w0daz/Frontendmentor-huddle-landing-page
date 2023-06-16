@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+max-width: 100%;
+display: block;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'open sans', sans-serif;
+    transition: 0.3s;
+  }
+
+.main {
+    max-width: 20rem;
+    /* margin: 2rem; */
+}
+
+.hero {
+  width: 100%;
+  background-image: url(images/bg-hero-mobile.svg);
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(193, 100%, 96%);
+  padding: 1.5em;
+}
+
+.nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav > .herobutton {
+  justify-self: end;
+  grid-column: 3/4;
+  background-color: #fff;
+  /* width: 6.875rem;
+  height: 1.625rem; */
+  width: 115%;
+  height: 135%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: hsl(192, 100%, 9%);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.83em;
+  box-shadow: 0px 0px 6px hsl(192, 38%, 85%);
+  transition: 0.3s;
+}
+
+.herobutton:hover {
+  color: hsl(192, 100%, 9%, 50%);
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.nav > img {
+  width: 9rem;
+}
+
+.herobody {
+  width: 100%;
+  padding: 4rem 0.2rem 0;
+}
+
+.herotextlettering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+.herotextlettering > p {
+  text-align: center;
+  font-size: 0.97em;
+  font-weight: 400;
+}
+
+.herotextbutton {
+  text-align: center;
+  background-color: hsl(322, 100%, 66%);
+  width: 80%;
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.83em;
+  transition: 0.3s;
+}
+
+.herotextbutton:hover {
+  background-color: hsl(322, 97%, 74%);
+}
+
+.herotext > img {
+  padding: 0.75rem;
+}
+
+.cards {
+  width: 100%;
+  background-color: #fff;
+  padding: 3.5em 1.5em 3em 1.5em;
+}
+
+.cardcontainer {
+  box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 20%);
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.688rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.cardcontainer > * > p {
+  color: hsl(208, 11%, 55%);
+  font-size: 0.881em;
+}
+
+
+.cardcontainer > .cardtext {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.subscriptionsection {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 20%);
+  margin: 1em;
+  padding: 1.5em;
+  margin-bottom: -4.25rem;
+}
+
+.subscriptionsection > h2 {
+  font-size: 1.058em;
+}
+
+.subsectionbutton {
+  text-align: center;
+  background-color: hsl(322, 100%, 66%);
+  width: 70%;
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.83em;
+  transition: 0.3s;
+}
+
+.subsectionbutton:hover {
+  background-color: hsl(322, 97%, 74%);
+}
+
+.footer {
+  color: #fff;
+  width: 100%;
+  background-color: hsl(192, 100%, 9%);
+  padding: 8.5em 1.5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5em;
+}
+
+.footertext > img {
+  filter: brightness(0) invert(1);
+  width: 10rem;
+}
+
+.footertext {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8em;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  column-gap: 1.2em;
+}
+
+.footertext > * > span {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.footerlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.footericons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5em;
+  text-align: center;
+}
+
+.footericons > p {
+  font-size: 0.7em;
+}
+
+.icons {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.icons > * {
+  width: 27px;
+  border: 0.063rem solid #fff;
+  border-radius: 50px;
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+.main {
+    min-width: none;
+    max-width: 90rem;
+    margin: 0rem;
+}
+
+.hero {
+  background-image: url(images/bg-hero-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 3em;
+}
+
+.herotext {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.herotextlettering > p {
+  font-size: 1.3em;
+}
+
+.nav > .herobutton {
+  width: 35%;
+  height: 135%;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.herotextlettering > h1 {
+  text-align: start;
+}
+
+.herotextlettering {
+  width: 90%;
+  align-items: start;
+  justify-content: end;
+  margin-bottom: 12.6%;
+}
+
+.herotextlettering > p {
+  text-align: start;
+}
+
+.herotextbutton {
+  width: 40%;
+  height: 2rem;
+}
+
+.cards {
+  padding: 5em 3em 4em 3em;
+}
+
+.cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cardcontainer > * > p {
+  font-size: 1.1em;
+}
+
+.cardOnetext {
+  order: 1;
+  grid-column: span 2;
+}
+
+.cardcontainer > * > h3 {
+  font-size: 2em;
+}
+
+.cardOneimg {
+order: 3;
+}
+
+.cardThreetext {
+  order: 1;
+  grid-column: span 2;
+}
+
+.cardThreeimg {
+  order: 3;
+}
+
+.cardtext {
+  position: relative;
+  width: 75%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.cardtext > p {
+  text-align: start;
+}
+
+.cardTwotext {
+  grid-column: span 2;
+  width: 60%;
+  margin-left: 15rem;
+  text-align: start;
+}
+
+.subscriptionsection {
+  border-radius: 15px;
+  margin: 0 20em;
+  padding: 2em;
+  margin-bottom: -4.25rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 8.5rem 3rem 3rem 3rem;
+}
+
+.footerlinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  grid-auto-rows: 1.5em;
+  justify-self: center;
+  align-self: center;
+}
+
+.footericons {
+  justify-content: space-around;
+  align-items: start;
+  margin: 2.4rem 0 0 5rem;
+}
+
+}
+
+@media only screen and (max-width: 1075px) and (min-width: 600px){
+  .nav > .herobutton {
+    width: 50%;
+    height: 135%;
+  }
+
+  .herotextbutton {
+    width: 60%;
+    height: 30px;
+  }
+
+  .cardtext {
+    width: 50%;
+    margin-left: 5rem;
+  }
+
+  .cardcontainer > * > h3 {
+    font-size: 1.3em;
+    text-align: start;
+  }
+  
+  .cardcontainer > * > p {
+    font-size: 1em;
+  }
+
+  .subscriptionsection {
+    margin: 10em;
+    margin-bottom: -4.25rem;
+  }
+}
+
