@@ -73,8 +73,6 @@ body {
   justify-self: end;
   grid-column: 3/4;
   background-color: #fff;
-  /* width: 6.875rem;
-  height: 1.625rem; */
   width: 115%;
   height: 135%;
   display: flex;
@@ -94,6 +92,7 @@ body {
 }
 
 .heading {
+  color: hsl(192, 100%, 9%);
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 1.3em;
@@ -120,6 +119,7 @@ body {
   text-align: center;
   font-size: 0.97em;
   font-weight: 400;
+  color: hsl(192, 100%, 9%);
 }
 
 .herotextbutton {
@@ -150,6 +150,7 @@ body {
   width: 100%;
   background-color: #fff;
   padding: 3.5em 1.5em 3em 1.5em;
+  color: hsl(192, 100%, 9%);
 }
 
 .cardcontainer {
@@ -187,11 +188,12 @@ body {
   box-shadow: 0px 0px 6px hsl(180, 2%, 36%, 20%);
   margin: 1em;
   padding: 1.5em;
-  margin-bottom: -4.25rem;
+  margin-bottom: -4.15rem;
 }
 
 .subscriptionsection > h2 {
   font-size: 1.058em;
+  color: hsl(192, 100%, 9%);
 }
 
 .subsectionbutton {
@@ -208,6 +210,7 @@ body {
   font-weight: 700;
   font-size: 0.83em;
   transition: 0.3s;
+  box-shadow: 0px 2px 5px hsl(180, 2%, 36%, 30%);
 }
 
 .subsectionbutton:hover {
@@ -288,11 +291,15 @@ body {
     margin: 0rem;
 }
 
+.nav > img {
+  width: 12rem;
+}
+
 .hero {
   background-image: url(images/bg-hero-desktop.svg);
   background-position: center;
   background-size: cover;
-  padding: 3em;
+  padding: 4.3em;
 }
 
 .herotext {
@@ -305,8 +312,8 @@ body {
 }
 
 .nav > .herobutton {
-  width: 35%;
-  height: 135%;
+  width: 46%;
+  height: 134%;
 }
 
 .heading {
@@ -331,12 +338,13 @@ body {
 }
 
 .herotextbutton {
-  width: 40%;
-  height: 2rem;
+  width: 53%;
+  height: 3.1rem;
+  font-size: 1em;
 }
 
 .cards {
-  padding: 5em 3em 4em 3em;
+  padding: 7em 4.3em 6em 4.3em;
 }
 
 .cardcontainer {
@@ -392,15 +400,31 @@ order: 3;
 
 .subscriptionsection {
   border-radius: 15px;
-  margin: 0 20em;
-  padding: 2em;
-  margin-bottom: -4.25rem;
+  margin: 0 26em;
+  padding: 3em;
+  margin-bottom: -5rem;
+  row-gap: 2em;
+}
+
+.subscriptionsection > h2 {
+  font-size: 1.7em;
+  color: hsl(192, 100%, 9%);
+}
+
+.subsectionbutton {
+  width: 55%;
+  height: 3.1rem;
+  font-size: 1.1em;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding: 8.5rem 3rem 3rem 3rem;
+  padding: 8.5rem 4.3rem 4rem 4.3rem;
+}
+
+.footertext > img {
+  width: 15.5rem;
 }
 
 .footerlinks {
@@ -413,14 +437,14 @@ order: 3;
 }
 
 .footericons {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: start;
-  margin: 2.4rem 0 0 5rem;
+  margin: 4rem 0 0 5rem;
 }
 
 }
 
-@media only screen and (max-width: 1075px) and (min-width: 600px){
+@media only screen and (max-width: 1300px) and (min-width: 600px){
   .nav > .herobutton {
     width: 50%;
     height: 135%;
@@ -446,7 +470,7 @@ order: 3;
   }
 
   .subscriptionsection {
-    margin: 10em;
+    margin: 9em;
     margin-bottom: -4.25rem;
   }
 }
